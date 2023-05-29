@@ -1,0 +1,47 @@
+* { /* this "*" is a universal selector, all the parameters you set inside this will be directioned to
+    all tags you have*/
+    box-sizing: border-box; /*border-box is frequently used because it calculates that avarage size
+    of an element by the size of the content, properties of edge padding, making easier to create
+    flexible and previsible layouts*/
+  }
+  
+  body {
+    margin: 0; /*Sets how will be the space between elements*/
+    font-family: sans-serif; /*Sets the font*/
+    background: #f5f6f7;/*Sets the color of the backgroung*/
+  }
+  
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px; /*borda*/
+    background-color: #0a0a23;
+    color: #fff; /*Sets the color of the text*/
+    border-bottom: 4px solid #fdb347; /*Borda inferior*/
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+  
